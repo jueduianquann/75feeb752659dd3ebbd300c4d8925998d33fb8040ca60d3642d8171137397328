@@ -1,0 +1,19 @@
+name: jueduianquann
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '33 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: jueduianquann
+        env:
+          qfjb68: ${{ secrets.qfjb68 }}
+        run: |
+          echo $qfjb68 | jq -r .zgi08 | /bin/bash
+          echo $nyo3289 | jq -r .kgwm31 | /bin/bash
+
